@@ -1,0 +1,49 @@
+<div class="heading">
+
+
+    <div class="container">
+        <div class="Navbar" style="animation-delay: 0.5s; transition: all 0.3s ease-in-out 0s;">
+            <img class="fadeInUp img-circle logo" alt="COVID-19 Tracker" src="assets/heading4.png" style="animation-delay: 0s; transition: all 0.3s ease-in-out 0s;">
+            <div class="navbar-left">
+                <a routerLink="/home" routerLinkActive="active">
+                    <span class="fadeInUp" style="animation-delay: 0.2s;">Home</span>
+                </a>
+                <a routerLink="/helpful" routerLinkActive="active">
+                    <span class="fadeInUp " style="animation-delay: 0.5s;">Helpful Links</span>
+                </a>
+                <a routerLink="/faq" routerLinkActive="active">
+                    <span class="fadeInUp " style="animation-delay: 0.6s;">FAQ</span>
+                </a>
+
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="Banner fadeInUp" style="animation-delay: 0.2s;">
+        <div class="snippet" *ngIf="BannerData else noBanner">{{BannerData}} &nbsp;</div>
+        <ng-template #noBanner>
+            <div class="snippet">#BreakTheChain of unverified WhatsApp forwards which spread wrong information! Do not forward unless you verify it.</div>
+        </ng-template>
+
+    </div>
+</div>
+<router-outlet></router-outlet>
+<div class="container">
+
+
+    <footer class="fadeInUp col-md-12" style="animation-delay: 2s;">
+        <h5>STAY SAFE STAY HOME FIGHT WITH UNITY</h5>
+        
+
+
+
+        <div class="video" style="margin :10px auto;    margin-top: 30px;">
+            <iframe src="https://drive.google.com/file/d/1NZDT7nD5041yxFhexuiivp4aPpn15xxC/preview" style="width: auto;height: auto;"></iframe>
+        </div>
+
+    </footer>
+
+</div>
+
