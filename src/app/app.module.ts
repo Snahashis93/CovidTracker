@@ -9,6 +9,8 @@ import { CoronaService } from './shared/corona.service';
 import { DistrictComponent } from './district/district.component';
 import { HelpfulLinksComponent } from './helpful-links/helpful-links.component';
 import { FAQComponent } from './faq/faq.component';
+import { CovidChartComponent } from './chart/chart.component';
+import{ NgApexchartsModule}from "ng-apexcharts"
 
 @NgModule({
   declarations: [
@@ -16,14 +18,17 @@ import { FAQComponent } from './faq/faq.component';
     HomeComponent,
     DistrictComponent,
     HelpfulLinksComponent,
-    FAQComponent
+    FAQComponent,
+    CovidChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgApexchartsModule
   ],
   providers: [CoronaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+    
