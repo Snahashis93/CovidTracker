@@ -1,7 +1,40 @@
 <div class="heading">
 
 
-    <div class="container">
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top sticky   ">
+        
+        <div class="container">
+              
+            <a class="navbar-brand"><img src="assets/coronnnna.png" width="50" height="50" alt=""> Covid</a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">     
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/chart">Chart <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/faq">FAQ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" routerLink="/helpful">More <span class="sr-only">(current)</span></a>
+                </li>
+               
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <br/>
+        <br/>
+        <br/>
+        
+    </div>
+    <!--    
         <div class="Navbar" style="animation-delay: 0.5s; transition: all 0.3s ease-in-out 0s;">
             <img class="fadeInUp img-circle logo" alt="COVID-19 Tracker" src="assets/heading4.png" style="animation-delay: 0s; transition: all 0.3s ease-in-out 0s;">
             <div class="navbar-left">
@@ -22,14 +55,24 @@
             </div>
             
         </div>
-    </div>
+    </div> -->
 
-    <div class="Banner fadeInUp" style="animation-delay: 0.2s;">
+    <!-- <div class="Banner fadeInUp" style="animation-delay: 0.2s;">
         <div class="snippet" *ngIf="BannerData else noBanner">{{BannerData}} &nbsp;</div>
         <ng-template #noBanner>
             <div class="snippet">#BreakTheChain of unverified WhatsApp forwards which spread wrong information! Do not forward unless you verify it.</div>
         </ng-template>
 
+    </div> -->
+
+    <div class="card">
+        <div class="card-body" style="animation-delay: 0.2s;">
+            <h5 class="card-title text-muted">IMPORTANT</h5>
+            <div class="card-text text-danger"><h3 class="snippet  " *ngIf="BannerData else noBanner">{{BannerData}} &nbsp;</h3>
+                <ng-template #noBanner>
+                    <span            class="snippet ">#BreakTheChain     of unverified WhatsApp forwards which spread wrong information! Do not forward unless you verify it.</span>
+                </ng-template></div>
+        </div>
     </div>
 </div>
 <router-outlet></router-outlet>
@@ -42,9 +85,7 @@
 
 
 
-        <div class="video" style="margin :10px auto;    margin-top: 30px;">
-            <iframe src="https://drive.google.com/file/d/1NZDT7nD5041yxFhexuiivp4aPpn15xxC/preview" style="width: auto;height: auto;"></iframe>
-        </div>
+       
 
     </footer>
 

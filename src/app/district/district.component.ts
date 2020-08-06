@@ -22,6 +22,7 @@ export class DistrictComponent implements OnInit {
   constructor(private cs: CoronaService, ) { }
 
   ngOnInit(): void {
+    debugger;     
     this.cs.districtdata.subscribe(data => {
 
       let districtDataArray = [];

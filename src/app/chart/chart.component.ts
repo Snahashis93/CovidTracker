@@ -120,8 +120,8 @@ export class CovidChartComponent implements OnInit {
       size: 0
     };
     this.title = {
-      text: "Covid tracker",
-      align: "center"
+      text: "",
+      align: "left"
     };
     this.fill = {
       type: "gradient",

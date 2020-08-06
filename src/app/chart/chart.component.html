@@ -1,91 +1,121 @@
-<div>
-    <label>Daily Confirmed</label>
-<apx-chart
-  [series]="seriesDailyConfirmed"
-  [chart]="chart"
-  [dataLabels]="dataLabels"
-  [markers]="markers"
-  [title]="title"
-  [fill]="fill"
-  [yaxis]="yaxis"
-  [xaxis]="xaxis"
-  [tooltip]="tooltip"
-  [autoUpdateSeries]="true"
-></apx-chart>
+<div class="card">
+  <div class="card-body">
+    
+    <a class="text-primary" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Daily Confirmed
+    </a>
+    <p  class="collapse card-text" id="collapseOne"><apx-chart
+      [series]="seriesDailyConfirmed"
+      [chart]="chart"
+      [dataLabels]="dataLabels"
+      [markers]="markers"
+      [title]="title"
+      [fill]="fill"
+      [yaxis]="yaxis"
+      [xaxis]="xaxis"
+      [tooltip]="tooltip"
+      [autoUpdateSeries]="true"
+    ></apx-chart> </p>
+  </div>
 </div>
-<div>
-    <label>Daily Deceased</label>
-<apx-chart
-  [series]="seriesDailyDeceased"
-  [chart]="chart"
-  [dataLabels]="dataLabels"
-  [markers]="markers"
-  [title]="title"
-  [fill]="fill"
-  [yaxis]="yaxis"
-  [xaxis]="xaxis"
-  [tooltip]="tooltip"
-  [autoUpdateSeries]="true"
-></apx-chart>
+<div class="card">
+  <div class="card-body">
+    
+    <a  class="text-danger" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Daily Deceased
+    </a>
+    <p class=" collapse card-text" id="collapseTwo"><apx-chart
+      [series]="seriesDailyDeceased"
+      [chart]="chart"
+      [dataLabels]="dataLabels"
+      [markers]="markers"
+      [title]="title"
+      [fill]="fill"
+      [yaxis]="yaxis"
+      [xaxis]="xaxis"
+      [tooltip]="tooltip"
+      [autoUpdateSeries]="true"
+    ></apx-chart>
+    </p>
+  </div>
 </div>
-<div>
-    <label>Daily Recovered</label>
-<apx-chart
-  [series]="seriesDailyRecovered"
-  [chart]="chart"
-  [dataLabels]="dataLabels"
-  [markers]="markers"
-  [title]="title"
-  [fill]="fill"
-  [yaxis]="yaxis"
-  [xaxis]="xaxis"
-  [tooltip]="tooltip"
-  [autoUpdateSeries]="true"
-></apx-chart>
+<div class="card">
+  <div class="card-body">
+    
+    <a  class="text-success" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Daily Recovered
+    </a>
+    <p class="collapse card-text" id="collapseThree"><apx-chart
+      [series]="seriesDailyRecovered"
+      [chart]="chart"
+      [dataLabels]="dataLabels"
+      [markers]="markers"
+      [title]="title"
+      [fill]="fill"
+      [yaxis]="yaxis"
+      [xaxis]="xaxis"
+      [tooltip]="tooltip"
+      [autoUpdateSeries]="true"
+    ></apx-chart></p>
+  </div>
 </div>
-<div>
-    <label>Total Confirmed</label>
-<apx-chart
-  [series]="seriesTotalConfirmed"
-  [chart]="chart"
-  [dataLabels]="dataLabels"
-  [markers]="markers"
-  [title]="title"
-  [fill]="fill"
-  [yaxis]="yaxis"
-  [xaxis]="xaxis"
-  [tooltip]="tooltip"
-  [autoUpdateSeries]="true"
-></apx-chart>
+<div class="card">
+  
+  <div class="card-body">
+    <a  data-toggle="collapse" href="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Total Confirmed
+    </a>
+    <p class="collapse card-text" id="collapseFour"><apx-chart
+      [series]="seriesTotalConfirmed"
+      [chart]="chart"
+      [dataLabels]="dataLabels"
+      [markers]="markers"
+      [title]="title"
+      [fill]="fill"
+      [yaxis]="yaxis"
+      [xaxis]="xaxis"
+      [tooltip]="tooltip"
+      [autoUpdateSeries]="true"
+    ></apx-chart></p>
+  </div>
 </div>
-<div>
-    <label>Total Deceased</label>
-<apx-chart
-  [series]="seriesTotalDeceased"
-  [chart]="chart"
-  [dataLabels]="dataLabels"
-  [markers]="markers"
-  [title]="title"
-  [fill]="fill"
-  [yaxis]="yaxis"
-  [xaxis]="xaxis"
-  [tooltip]="tooltip"
-  [autoUpdateSeries]="true"
-></apx-chart>
+<div class="card">
+  <div class="card-body">
+    
+    <a  class="text-danger" data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Total Deceased
+    </a>
+    <p class="collapse card-text" id="collapseFive"><apx-chart
+      [series]="seriesTotalDeceased"
+      [chart]="chart"
+      [dataLabels]="dataLabels"
+      [markers]="markers"
+      [title]="title"
+      [fill]="fill"
+      [yaxis]="yaxis"
+      [xaxis]="xaxis"
+      [tooltip]="tooltip"
+      [autoUpdateSeries]="true"
+    ></apx-chart></p>
+  </div>
 </div>
-<div>
-    <label>Total Recovered</label>
-<apx-chart
-  [series]="seriesTotalRecovered"
-  [chart]="chart"
-  [dataLabels]="dataLabels"
-  [markers]="markers"
-  [title]="title"
-  [fill]="fill"
-  [yaxis]="yaxis"
-  [xaxis]="xaxis"
-  [tooltip]="tooltip"
-  [autoUpdateSeries]="true"
-></apx-chart>
+<div class="card">
+  <div class="card-body">
+    
+    <a  class="text-success" data-toggle="collapse" href="#collapseSix" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Total Recovered
+    </a>
+    <p class="collapse card-text" id="collapseSix"><apx-chart
+      [series]="seriesTotalRecovered"
+      [chart]="chart"
+      [dataLabels]="dataLabels"
+      [markers]="markers"
+      [title]="title"
+      [fill]="fill"
+      [yaxis]="yaxis"
+      [xaxis]="xaxis"
+      [tooltip]="tooltip"
+      [autoUpdateSeries]="true"
+    ></apx-chart></p>
+  </div>
 </div>
-

@@ -81,7 +81,13 @@ th .heading-content abbr {
 }
 
 th abbr.confirmed {
+    color: #098f14e3 !important;
+}
+th abbr.deceased {
     color: #ff073a !important;
+}
+th abbr.active {
+    color: #0e60becc !important;
 }
 
 abbr {
@@ -95,7 +101,10 @@ abbr:hover {
 table tr:hover {
     background: rgba(61, 62, 63, 0.125) !important;
 }
-
+table tbody td .deltas {
+    margin-right: 6px;
+    font-size: 12px!important;
+}
 td {
     padding: .25rem;
     font-size: 13px;
@@ -108,7 +117,7 @@ td {
     font-weight: 900;
 }
 
-td.col-md-6.district-name {
+td.col-md-3.district-name {
     width: 150px !important;
 }
 
@@ -165,10 +174,10 @@ svg {
     vertical-align: -.25px;
 }
 
-span.deltas {
+/* span.deltas {
     margin-right: 20px;
     color: red !important
-}
+} */
 
 .up-arrow {
     width: 0;
